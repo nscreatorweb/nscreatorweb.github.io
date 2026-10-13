@@ -1,0 +1,2482 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green Studio — салон краси в Чернівцях</title>
+<meta name="description" content="Салон краси Green Studio у Чернівцях: візаж і брови, косметологія, нігтьовий сервіс, перукарські послуги, лікування та нарощування волосся. Запис у Direct або за телефоном 095 022 32 00.">
+<meta name="theme-color" content="#F4F4EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B0E12" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="Green Studio">
+<meta property="og:title" content="Green Studio — салон краси в Чернівцях">
+<meta property="og:description" content="Візаж і брови, косметологія, нігті, перукарські послуги та волосся — усе для краси в одному просторі Green Studio.">
+<!-- ВАЖЛИВО: замініть на повну адресу після хостингу, напр. https://ваш-домен.com/og-image.jpg —
+     деякі месенджери (Telegram, iMessage) не показують картку без абсолютного посилання -->
+<meta property="og:image" content="og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Green Studio — салон краси в Чернівцях">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Green Studio — салон краси в Чернівцях">
+<meta name="twitter:description" content="Візаж і брови, косметологія, нігті, перукарські послуги та волосся — усе для краси в одному просторі Green Studio.">
+<meta name="twitter:image" content="og-image.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%237B7F57' stroke='%23232519' stroke-width='4'/%3E%3Ctext x='32' y='41' font-size='26' font-family='Georgia,serif' text-anchor='middle' fill='%2315170F'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,420;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* ============ TOKENS ============ */
+  :root{
+    --ink:#1B1D14;
+    --ink-soft:#4A4D3A;
+    --ink-faint:#5A5D47;
+    --bg:#F4F4EC;
+    --surface:#E9EADB;
+    --surface-2:#DADCC6;
+    --line:#D3D5BE;
+    --line-strong:#A9AC8B;
+    --wine:#3F4229;
+    --wine-deep:#262819;
+    --wine-tint:#E2E3CF;
+    --accent:#6E7249;
+    --accent-soft:#DADCC0;
+    --gold:#8A8D6B;
+    --gold-soft:#C4C7A5;
+    --cream-text:#F4F4EC;
+    --on-accent:#FFFFFF;
+    --shadow-sm: 0 2px 10px rgba(27,29,22,0.07);
+    --shadow-md: 0 18px 40px -14px rgba(26,27,29,0.24);
+    --shadow-lg: 0 34px 70px -20px rgba(26,27,29,0.32);
+    --shadow-glow: 0 22px 46px -18px color-mix(in srgb, var(--accent) 55%, transparent);
+    --r-card: 32px 32px 32px 8px;
+    --r-card-sm: 22px 22px 22px 6px;
+    --r-pill: 999px;
+    --ease: cubic-bezier(.19,.84,.28,1);
+    --ease-soft: cubic-bezier(.4,0,.2,1);
+    --ease-spring: cubic-bezier(.34,1.4,.4,1);
+    --sp-1:8px; --sp-2:16px; --sp-3:24px; --sp-4:32px;
+    --sp-5:48px; --sp-6:64px; --sp-7:96px; --sp-8:140px;
+    --maxw:1200px;
+    --focus: 2px solid var(--accent);
+  }
+
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#ECEDE2; --ink-soft:#B9BBA8; --ink-faint:#94977F;
+      --bg:#0B0E12; --surface:#12161A; --surface-2:#1B2022;
+      --line:#262C2B; --line-strong:#3E453F;
+      --wine:#C9CCA6; --wine-deep:#E4E6CC; --wine-tint:#1B2018;
+      --accent:#A3A872; --accent-soft:#2C2F1F;
+      --gold:#AEB28A; --gold-soft:#D3D6B4;
+      --cream-text:#0B0E12; --on-accent:#0B0E12;
+      --shadow-sm: 0 2px 10px rgba(0,0,0,0.28);
+      --shadow-md: 0 18px 40px -14px rgba(0,0,0,0.5);
+      --shadow-lg: 0 34px 70px -20px rgba(0,0,0,0.55);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#ECEDE2; --ink-soft:#B9BBA8; --ink-faint:#94977F;
+    --bg:#0B0E12; --surface:#12161A; --surface-2:#1B2022;
+    --line:#262C2B; --line-strong:#3E453F;
+    --wine:#C9CCA6; --wine-deep:#E4E6CC; --wine-tint:#1B2018;
+    --accent:#A3A872; --accent-soft:#2C2F1F;
+    --gold:#AEB28A; --gold-soft:#D3D6B4;
+    --cream-text:#0B0E12; --on-accent:#0B0E12;
+    --shadow-sm: 0 2px 10px rgba(0,0,0,0.28);
+    --shadow-md: 0 18px 40px -14px rgba(0,0,0,0.5);
+    --shadow-lg: 0 34px 70px -20px rgba(0,0,0,0.55);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Manrope', sans-serif;
+    font-size:clamp(16px, 0.6vw + 15px, 17.5px);
+    line-height:1.65;
+    letter-spacing:-0.006em;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    font-optical-sizing:auto;
+    font-weight:500;
+    margin:0;
+  }
+  h1{letter-spacing:-0.026em;}
+  h2{letter-spacing:-0.02em;}
+  h3{letter-spacing:-0.01em;}
+  p{margin:0;}
+  ul{margin:0;padding:0;list-style:none;}
+  button{font-family:inherit;cursor:pointer;background:none;border:none;color:inherit;appearance:none;-webkit-appearance:none;}
+
+  :focus-visible{outline:var(--focus);outline-offset:4px;border-radius:2px;}
+  .testi-wrap :focus-visible{outline-color:var(--cream-text);}
+
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 clamp(20px,4vw,40px);}
+  section[id], #reviews{scroll-margin-top:92px;}
+
+  @media(prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
+  }
+
+  /* ============ HEADER ============ */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:color-mix(in srgb, var(--bg) 82%, transparent);
+    backdrop-filter: blur(14px) saturate(1.4);
+    border-bottom:1px solid transparent;
+    transition:border-color .4s var(--ease-soft), box-shadow .4s var(--ease-soft), padding .3s var(--ease-soft);
+  }
+  header.scrolled{
+    border-bottom-color:var(--line);
+    box-shadow:0 8px 24px -16px rgba(26,27,29,0.2);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:20px clamp(20px,4vw,40px);
+    max-width:var(--maxw); margin:0 auto;
+    transition:padding .3s var(--ease-soft);
+  }
+  header.scrolled .nav{padding-top:14px; padding-bottom:14px;}
+  .brand{display:flex; align-items:baseline; gap:10px; text-decoration:none; color:inherit;
+    min-height:44px; padding:10px 0; margin:-10px 0;}
+  .logo-mark{
+    display:block; flex-shrink:0; align-self:center;
+    font-family:'Cormorant Garamond', serif; font-weight:600; text-transform:uppercase;
+    font-size:1.5rem; letter-spacing:0.06em; color:var(--ink);
+    transition:color .3s var(--ease-soft);
+  }
+  .brand:hover .logo-mark{color:var(--accent);}
+  .logo-sub{
+    font-family:'Manrope', sans-serif; font-size:0.72rem; font-weight:500;
+    letter-spacing:0.14em; text-transform:uppercase; color:var(--ink-faint); align-self:center;
+    padding-bottom:1px;
+  }
+  .footer-logo{
+    display:block; margin-bottom:14px;
+    font-family:'Cormorant Garamond', serif; font-weight:600; text-transform:uppercase;
+    font-size:1.5rem; letter-spacing:0.06em; color:var(--ink-soft);
+  }
+  @media(max-width:420px){ .logo-mark{font-size:1.24rem;} .logo-sub{font-size:0.64rem;} }
+
+  .nav-links{display:none; gap:38px; font-size:0.92rem; font-weight:600; color:var(--ink-soft);}
+  .nav-links button{text-decoration:none; text-align:left; position:relative; padding:6px 0; transition:color .25s var(--ease-soft);}
+  .nav-links button:hover{color:var(--ink);}
+  .nav-links button::after{
+    content:''; position:absolute; left:0; bottom:0; width:0%; height:1.5px;
+    background:var(--accent); transition:width .35s var(--ease);
+  }
+  .nav-links button:hover::after{width:100%;}
+  .nav .nav-cta{display:none;}
+
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:9px;
+    padding:16px 30px; border-radius:var(--r-pill);
+    font-size:0.94rem; font-weight:700; letter-spacing:0.005em;
+    text-decoration:none; border:1px solid transparent;
+    position:relative; overflow:hidden; isolation:isolate;
+    transition:transform .4s var(--ease-spring), box-shadow .4s var(--ease), color .35s ease, border-color .35s ease;
+  }
+  .btn:active{transform:scale(0.96);}
+  .btn-primary{background:var(--wine); color:var(--cream-text); box-shadow:0 14px 30px -12px rgba(26,27,29,0.46);}
+  .btn-primary::before{
+    content:''; position:absolute; inset:0; z-index:-1;
+    background:var(--accent);
+    transform:translateX(-101%);
+    transition:transform .45s var(--ease);
+  }
+  .btn-primary:hover::before{transform:translateX(0);}
+  .btn-primary:hover{transform:translateY(-3px); box-shadow:var(--shadow-glow); color:var(--bg);}
+  .btn-ghost{background:transparent; color:var(--ink); border-color:var(--line-strong);}
+  .btn-ghost:hover{border-color:var(--accent); color:var(--accent); transform:translateY(-3px);}
+  .btn svg{width:15px; height:15px; transition:transform .35s var(--ease-spring);}
+  .btn:hover svg{transform:translateX(4px);}
+
+  .burger{
+    width:44px; height:44px; display:flex; align-items:center; justify-content:center;
+    border:1px solid var(--line-strong); border-radius:50%; transition:border-color .25s ease, background .25s ease, transform .3s var(--ease-spring);
+  }
+  .burger:hover{border-color:var(--accent); background:var(--wine-tint); transform:rotate(90deg);}
+  .burger svg{width:17px; height:17px;}
+
+  /* ============ HERO ============ */
+  .hero{position:relative; padding:clamp(44px,7vw,76px) 0 clamp(64px,9vw,96px); overflow:hidden;}
+  .hero::before{
+    content:''; position:absolute; top:-20%; right:-10%; width:60vw; height:60vw; max-width:820px; max-height:820px;
+    background:radial-gradient(circle, color-mix(in srgb, var(--accent) 14%, transparent) 0%, transparent 68%);
+    z-index:0; pointer-events:none;
+  }
+  .hero-grid{position:relative; z-index:1; display:grid; grid-template-columns:1fr; gap:44px; align-items:center;}
+
+  .eyebrow-city{
+    display:inline-flex; align-items:center; gap:9px;
+    font-size:0.76rem; color:var(--ink-soft); font-weight:700;
+    letter-spacing:0.08em; text-transform:uppercase;
+    margin-bottom:24px; padding:9px 18px 9px 13px;
+    background:var(--surface); border-radius:var(--r-pill);
+  }
+  .eyebrow-city .dot{width:6px; height:6px; border-radius:50%; background:var(--accent); flex-shrink:0;}
+
+  .hero h1{
+    font-size:clamp(2.6rem, 3.6vw + 1.3rem, 4.6rem);
+    line-height:1.04;
+    letter-spacing:-0.026em;
+    color:var(--ink);
+    max-width:17ch;
+  }
+
+  .hero-sub{
+    margin-top:24px; font-size:1.18rem; line-height:1.6;
+    color:var(--ink-soft); max-width:40ch;
+  }
+  .hero-cta-row{margin-top:36px; display:flex; flex-wrap:wrap; align-items:center; gap:22px;}
+  @media(max-width:639px){
+    .hero-cta-row{gap:16px; margin-top:30px;}
+    .hero-cta-row .btn-primary{padding:14px 22px; font-size:0.88rem; gap:7px;}
+    .hero-cta-row .btn-primary svg{width:13px; height:13px;}
+    .hero-quick{gap:10px;}
+    .hero-quick .quick-link{width:42px; height:42px;}
+    .hero-quick .quick-link svg{width:16px; height:16px;}
+  }
+
+  .hero-quick{display:flex; align-items:center; gap:12px;}
+  .hero-quick span{font-size:0.85rem; color:var(--ink-faint); font-weight:600;}
+  .quick-link{
+    width:46px; height:46px; border-radius:50%; border:1px solid var(--line-strong);
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+    transition:transform .35s var(--ease-spring), background .3s var(--ease-soft), border-color .3s var(--ease-soft), color .3s var(--ease-soft);
+  }
+  .quick-link svg{width:18px; height:18px;}
+  .quick-link:hover{border-color:var(--accent); background:var(--accent); color:var(--on-accent); transform:translateY(-3px) scale(1.05);}
+
+  /* Hero visual: bold, minimalist product composition — no stock imagery */
+  .hero-visual{position:relative; height:clamp(380px,44vw,540px);}
+  .hv-panel{
+    position:absolute; inset:0;
+    border-radius:var(--r-card);
+    background:#0B0E12;
+    box-shadow:var(--shadow-lg);
+    overflow:hidden;
+    z-index:1;
+    transition:transform .5s var(--ease);
+  }
+  .hero-visual:hover .hv-panel{transform:translateY(-4px);}
+  .hv-photo{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 62%; z-index:1; transition:transform .8s var(--ease);}
+  .hero-visual:hover .hv-photo{transform:scale(1.035);}
+  .hv-scrim{position:absolute; inset:0; z-index:2; background:linear-gradient(to top, rgba(16,17,19,0.72) 0%, rgba(16,17,19,0.28) 34%, rgba(16,17,19,0) 62%);}
+  .hv-caption{
+    position:absolute; left:26px; bottom:26px; right:26px; z-index:3;
+    color:#F7F8F8;
+    text-shadow:0 1px 12px rgba(16,17,19,0.55);
+  }
+  .hv-caption strong{
+    display:block; font-family:'Fraunces', serif; font-optical-sizing:auto; font-style:italic; font-weight:400;
+    font-size:1.14rem; margin-bottom:4px;
+  }
+  .hv-caption span{font-size:0.82rem; opacity:0.72; letter-spacing:0.01em;}
+
+  .hero-anim > *{opacity:0; transform:translateY(16px); animation:heroIn .9s var(--ease) forwards;}
+  .hero-anim > *:nth-child(1){animation-delay:.05s;}
+  .hero-anim > *:nth-child(2){animation-delay:.15s;}
+  .hero-anim > *:nth-child(3){animation-delay:.25s;}
+  .hero-anim > *:nth-child(4){animation-delay:.35s;}
+  .hero-visual{opacity:0; transform:translateY(16px) scale(.98); animation:heroIn 1s var(--ease) forwards; animation-delay:.2s;}
+  .hv-photo{opacity:0; animation:productIn 1.1s var(--ease) forwards; animation-delay:.4s;}
+  @keyframes heroIn{to{opacity:1; transform:none;}}
+  @keyframes productIn{from{opacity:0; transform:translateY(14px) scale(.92);} to{opacity:1; transform:none;}}
+
+  /* ============ SECTION GENERICS ============ */
+  section{padding:clamp(64px,10vw,116px) 0;}
+  .section-head{max-width:640px; margin-bottom:clamp(36px,6vw,68px);}
+  .section-head h2{font-size:clamp(2.1rem, 1.5vw + 1.5rem, 3.1rem); line-height:1.1;}
+  .section-head p{margin-top:18px; color:var(--ink-soft); font-size:1.08rem; line-height:1.6;}
+  .kicker{
+    font-size:0.78rem; color:var(--accent); font-weight:800;
+    letter-spacing:0.09em; text-transform:uppercase;
+    margin-bottom:18px; display:flex; align-items:center; gap:10px;
+  }
+  .kicker::before{content:''; width:22px; height:1.5px; background:var(--accent); display:inline-block;}
+
+  .reveal{opacity:0; transform:translateY(22px); transition:opacity .7s var(--ease-soft), transform .7s var(--ease-soft);}
+  .reveal.in{opacity:1; transform:none;}
+  .reveal-group > *{opacity:0; transform:translateY(18px); transition:opacity .6s var(--ease-soft), transform .6s var(--ease-soft);}
+  .reveal-group.in > *:nth-child(1){transition-delay:.02s;}
+  .reveal-group.in > *:nth-child(2){transition-delay:.08s;}
+  .reveal-group.in > *:nth-child(3){transition-delay:.14s;}
+  .reveal-group.in > *:nth-child(4){transition-delay:.2s;}
+  .reveal-group.in > *:nth-child(5){transition-delay:.26s;}
+  .reveal-group.in > *:nth-child(6){transition-delay:.32s;}
+  .reveal-group.in > *:nth-child(7){transition-delay:.38s;}
+  .reveal-group.in > *:nth-child(8){transition-delay:.44s;}
+  .reveal-group.in > *:nth-child(9){transition-delay:.5s;}
+  .reveal-group.in > *:nth-child(10){transition-delay:.56s;}
+  .reveal-group.in > *{opacity:1; transform:none;}
+
+  /* ============ ADVANTAGES ============ */
+  .advantages-wrap section{padding:clamp(40px,6vw,64px) 0;}
+  .advantages-wrap{background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .adv-grid{display:grid; grid-template-columns:1fr; gap:var(--sp-2);}
+  @media(min-width:640px){ .adv-grid{grid-template-columns:repeat(2,1fr);} }
+  .adv-item{
+    background:var(--bg); border:1px solid var(--line); border-radius:var(--r-card-sm);
+    padding:var(--sp-4); transition:transform .45s var(--ease), box-shadow .45s var(--ease), border-color .45s var(--ease);
+  }
+  .adv-item:hover{transform:translateY(-6px); box-shadow:var(--shadow-glow); border-color:transparent;}
+  .adv-icon{
+    width:46px; height:46px; border-radius:50%; background:var(--wine-tint); color:var(--wine);
+    display:flex; align-items:center; justify-content:center; margin-bottom:22px;
+    transition:transform .45s var(--ease-spring), background .35s var(--ease-soft), color .35s var(--ease-soft);
+  }
+  .adv-item:hover .adv-icon{background:var(--accent); color:var(--on-accent); transform:rotate(-8deg) scale(1.08);}
+  .adv-icon svg{width:19px; height:19px;}
+  .adv-item h3{font-size:1.18rem; font-weight:500; margin-bottom:11px;}
+  .adv-item p{color:var(--ink-soft); font-size:0.96rem; line-height:1.55;}
+
+  /* ============ SERVICES ============ */
+  .service-tabs{display:flex; flex-wrap:nowrap; gap:10px; margin-bottom:var(--sp-5); overflow-x:auto; scrollbar-width:none; -webkit-overflow-scrolling:touch; padding-bottom:4px;}
+  .service-tabs::-webkit-scrollbar{display:none;}
+  .tab-btn{
+    padding:11px 21px; border-radius:999px; border:1px solid var(--line-strong);
+    color:var(--ink-soft); font-size:0.85rem; font-weight:700; white-space:nowrap; flex-shrink:0;
+    transition:transform .3s var(--ease-spring), border-color .3s var(--ease-soft), color .3s var(--ease-soft), background .3s var(--ease-soft), box-shadow .3s var(--ease-soft);
+  }
+  .tab-btn:hover{border-color:var(--accent); color:var(--accent); transform:translateY(-2px);}
+  .tab-btn.active{background:var(--wine); border-color:var(--wine); color:var(--cream-text); box-shadow:0 10px 22px -10px rgba(26,27,29,0.42); transform:none;}
+
+  .services-grid{display:grid; grid-template-columns:1fr; gap:26px;}
+
+  .service-card{
+    border:1px solid var(--line); border-radius:var(--r-card-sm);
+    background:var(--bg); overflow:hidden;
+    display:none; flex-direction:column;
+    transition:transform .45s var(--ease), box-shadow .45s var(--ease), border-color .45s var(--ease);
+  }
+  .service-card.show{display:flex;}
+  .service-card:hover{transform:translateY(-6px); box-shadow:var(--shadow-glow); border-color:transparent;}
+
+  /* card media — textured, editorial placeholder art; swap <svg> for a real <img> per card when photos land */
+  .sc-media{position:relative; aspect-ratio:4/3; overflow:hidden; flex-shrink:0; background:#1A1B1D;}
+  .sc-media svg{width:100%; height:100%; display:block; transition:transform .8s var(--ease);}
+  .service-card:hover .sc-media svg{transform:scale(1.035);}
+  .sc-media::after{
+    content:''; position:absolute; inset:0; pointer-events:none; opacity:0.5; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='matrix' values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.4 0'/></filter><rect width='180' height='180' filter='url(%23n)'/></svg>");
+  }
+  .sc-tag{
+    position:absolute; top:14px; left:14px; z-index:2;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:blur(6px);
+    color:var(--ink-soft); font-size:0.72rem; font-weight:800; letter-spacing:0.04em; text-transform:uppercase;
+    padding:6px 13px; border-radius:999px; border:1px solid var(--line);
+  }
+
+  .sc-body{padding:26px 26px 28px; display:flex; flex-direction:column; flex:1;}
+  .service-card h3{font-size:1.24rem; font-weight:500; margin-bottom:10px; letter-spacing:-0.008em;}
+  .service-card p{color:var(--ink-soft); font-size:0.94rem; line-height:1.58; margin-bottom:22px;}
+
+  .sc-foot{
+    margin-top:auto; display:flex; align-items:center; justify-content:space-between;
+    gap:14px; padding-top:20px; border-top:1px solid var(--line);
+  }
+  .sc-price{line-height:1.2;}
+  .sc-price em{display:block; font-style:normal; font-size:0.72rem; color:var(--ink-faint); margin-bottom:3px; text-transform:uppercase; letter-spacing:0.04em;}
+  .sc-price strong{font-family:'Fraunces', serif; font-optical-sizing:auto; font-size:1.36rem; font-weight:500; color:var(--ink); white-space:nowrap;}
+  .sc-btn{
+    display:inline-flex; align-items:center; gap:7px;
+    padding:11px 19px; border-radius:999px;
+    background:var(--wine-tint); color:var(--wine);
+    font-size:0.85rem; font-weight:700; text-decoration:none; white-space:nowrap;
+    transition:background .3s var(--ease-soft), color .3s var(--ease-soft);
+  }
+  .sc-btn svg{width:13px; height:13px; transition:transform .3s var(--ease-spring);}
+  .sc-btn:hover{background:var(--accent); color:var(--on-accent);}
+  .sc-btn:hover svg{transform:translateX(3px);}
+
+  /* mobile: swipeable, snap-scrolling row — one card settles per swipe */
+  @media(max-width:639px){
+    .services-grid{
+      display:flex; gap:14px;
+      overflow-x:auto; scroll-snap-type:x mandatory;
+      -webkit-overflow-scrolling:touch; scrollbar-width:none;
+      margin:0 calc(clamp(20px,4vw,40px) * -1);
+      padding:4px clamp(20px,4vw,40px) 10px;
+    }
+    .services-grid::-webkit-scrollbar{display:none;}
+    .services-grid:focus{outline:none;}
+    .services-grid:focus-visible{outline:var(--focus); outline-offset:6px;}
+    .services-grid{scroll-padding-left:clamp(20px,4vw,40px);}
+    .service-card{flex:0 0 82%; scroll-snap-align:start; scroll-snap-stop:always;}
+    .sc-media{aspect-ratio:3/2;}
+    .sc-body{padding:22px 22px 24px;}
+    .service-card:hover{transform:none;}
+    .sc-hint{display:flex;}
+  }
+  .sc-hint{
+    display:none; align-items:center; gap:8px;
+    margin-top:16px; font-size:0.82rem; color:var(--ink-faint);
+  }
+  .sc-hint svg{width:14px; height:14px; animation:hintNudge 1.8s ease-in-out infinite;}
+  @keyframes hintNudge{0%,100%{transform:translateX(0);} 50%{transform:translateX(4px);}}
+  .sc-note{margin-top:24px; font-size:0.86rem; color:var(--ink-faint); max-width:70ch; line-height:1.55;}
+
+  @media(min-width:640px){ .services-grid{grid-template-columns:repeat(2,1fr);} }
+  @media(min-width:960px){ .services-grid{grid-template-columns:repeat(3,1fr);} }
+
+  /* ============ PROCESS ============ */
+  .steps{display:grid; grid-template-columns:1fr; gap:0; position:relative;}
+  .steps::before{content:''; position:absolute; left:26px; top:10px; bottom:10px; width:1px; background:var(--line);}
+  .step{
+    display:grid; grid-template-columns:52px 1fr; gap:24px;
+    padding:22px 0; position:relative;
+  }
+  .step-index{
+    position:relative; z-index:1; width:52px; height:52px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    background:var(--bg); border:1.5px solid var(--line-strong);
+    font-family:'Fraunces', serif; font-optical-sizing:auto; font-style:italic; font-size:1.32rem; color:var(--wine);
+    transition:background .4s var(--ease-soft), border-color .4s var(--ease-soft), color .4s var(--ease-soft), transform .4s var(--ease-spring);
+  }
+  .step:hover .step-index{background:var(--accent); border-color:var(--accent); color:var(--on-accent); transform:scale(1.08);}
+  /* text column shifts on its own via transform (no layout reflow) so the circle
+     never drifts off the timeline's ::before line, which is positioned against .steps */
+  .step > div:last-child{padding-top:6px; transition:transform .4s var(--ease-soft);}
+  .step:hover > div:last-child{transform:translateX(8px);}
+  .step h3{font-size:1.17rem; font-weight:500; margin-bottom:8px;}
+  .step p{color:var(--ink-soft); font-size:0.98rem; line-height:1.55; max-width:56ch;}
+
+  /* ============ TEAM ============ */
+  .team-grid{display:grid; grid-template-columns:1fr; gap:var(--sp-2);}
+  @media(min-width:640px){ .team-grid{grid-template-columns:repeat(2,1fr);} }
+  @media(min-width:1040px){ .team-grid{grid-template-columns:repeat(3,1fr);} }
+  .team-card{
+    display:flex; align-items:flex-start; gap:16px;
+    background:var(--bg); border:1px solid var(--line); border-radius:var(--r-card-sm);
+    padding:24px; text-decoration:none; color:inherit;
+    transition:transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s var(--ease);
+  }
+  .team-card:hover{transform:translateY(-5px); box-shadow:var(--shadow-glow); border-color:transparent;}
+  .team-avatar{
+    width:52px; height:52px; border-radius:50%; flex-shrink:0;
+    background:var(--wine-tint); color:var(--wine);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces', serif; font-optical-sizing:auto; font-style:italic; font-weight:600; font-size:1.22rem;
+    transition:background .35s var(--ease-soft), color .35s var(--ease-soft);
+  }
+  .team-card:hover .team-avatar{background:var(--accent); color:var(--on-accent);}
+  .team-info{min-width:0;}
+  .team-name{font-family:'Fraunces', serif; font-optical-sizing:auto; font-size:1.1rem; font-weight:500; margin-bottom:4px;}
+  .team-role{color:var(--ink-soft); font-size:0.87rem; line-height:1.45; margin-bottom:8px;}
+  .team-handle{display:inline-flex; align-items:center; gap:5px; font-size:0.82rem; font-weight:700; color:var(--accent);}
+  .team-handle svg{width:13px; height:13px; flex-shrink:0;}
+
+  /* ============ TRUST / TESTIMONIALS ============ */
+  .testi-wrap{background:var(--wine); color:var(--cream-text);}
+  .testi-wrap .section-head p{color:color-mix(in srgb, var(--cream-text) 72%, transparent);}
+  /* panel flips to a light surface in dark mode: derive from the panel text
+     colour instead of a fixed light grey, which was invisible on invert */
+  .testi-wrap .kicker{color:color-mix(in srgb, var(--cream-text) 68%, transparent);}
+  .testi-wrap .kicker::before{background:color-mix(in srgb, var(--cream-text) 52%, transparent);}
+
+  /* 1 — what people actually come for */
+  .trust-chips-label{
+    display:block; font-size:0.82rem; font-weight:700; letter-spacing:0.03em;
+    color:color-mix(in srgb, var(--cream-text) 66%, transparent); margin-bottom:14px;
+  }
+  .trust-chips{display:flex; flex-wrap:wrap; gap:9px; margin-bottom:var(--sp-5);}
+  .trust-chips span{
+    font-size:0.84rem; font-weight:600;
+    padding:8px 15px; border-radius:999px;
+    border:1px solid color-mix(in srgb, var(--cream-text) 26%, transparent);
+    color:color-mix(in srgb, var(--cream-text) 88%, transparent);
+  }
+
+  .testi-grid{display:grid; grid-template-columns:1fr; gap:22px;}
+  .testi-card{
+    background:color-mix(in srgb, var(--cream-text) 7%, transparent);
+    border:1px solid color-mix(in srgb, var(--cream-text) 20%, transparent);
+    border-radius:var(--r-card-sm); padding:30px;
+    display:flex; flex-direction:column;
+    transition:transform .45s var(--ease), background .4s ease, border-color .4s ease;
+  }
+  .testi-card:hover{transform:translateY(-7px); background:color-mix(in srgb, var(--cream-text) 11%, transparent); border-color:color-mix(in srgb, var(--cream-text) 34%, transparent);}
+  .testi-stars{display:flex; gap:3px; margin-bottom:16px;}
+  .testi-stars svg{width:15px; height:15px; color:var(--accent);}
+  .testi-card p.quote{font-size:0.96rem; font-weight:500; line-height:1.55; margin-bottom:24px; color:color-mix(in srgb, var(--cream-text) 84%, transparent);}
+  .testi-who{display:flex; align-items:center; gap:13px; margin-top:auto; padding-top:20px; border-top:1px solid color-mix(in srgb, var(--cream-text) 16%, transparent);}
+  .testi-avatar{
+    width:40px; height:40px; border-radius:50%;
+    background:color-mix(in srgb, var(--cream-text) 22%, transparent);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces', serif; font-size:0.9rem; color:var(--cream-text); font-weight:600; flex-shrink:0;
+  }
+  .testi-name{font-size:0.92rem; font-weight:700;}
+  .testi-service{font-size:0.79rem; opacity:0.66;}
+
+  /* 3 — what to do next */
+  .trust-next{
+    margin-top:var(--sp-5); padding:28px;
+    border-radius:var(--r-card-sm);
+    background:color-mix(in srgb, var(--cream-text) 9%, transparent);
+    border:1px solid color-mix(in srgb, var(--cream-text) 22%, transparent);
+    display:flex; flex-direction:column; gap:20px;
+  }
+  .trust-next h3{font-size:1.3rem; font-weight:500; margin-bottom:6px;}
+  .trust-next p{font-size:0.94rem; color:color-mix(in srgb, var(--cream-text) 78%, transparent); max-width:46ch;}
+  .trust-next-actions{display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
+  .btn-cream{background:var(--cream-text); color:var(--wine); box-shadow:none;}
+  .btn-cream:hover{transform:translateY(-3px); background:var(--gold-soft); color:var(--wine-deep);}
+  .trust-next .quick-link{border-color:color-mix(in srgb, var(--cream-text) 38%, transparent); color:var(--cream-text);}
+  .trust-next .quick-link:hover{background:var(--cream-text); color:var(--wine); border-color:var(--cream-text);}
+
+  @media(min-width:640px){ .testi-grid{grid-template-columns:repeat(2,1fr); max-width:820px;} }
+  @media(min-width:860px){
+    .trust-next{flex-direction:row; align-items:center; justify-content:space-between; gap:32px; padding:32px 36px;}
+  }
+
+  /* reviews swipe on phones */
+  @media(max-width:639px){
+    .testi-grid{
+      display:flex; gap:16px;
+      overflow-x:auto; scroll-snap-type:x mandatory;
+      -webkit-overflow-scrolling:touch; scrollbar-width:none;
+      margin:0 calc(clamp(20px,4vw,40px) * -1);
+      padding:4px clamp(20px,4vw,40px) 10px;
+    }
+    .testi-grid::-webkit-scrollbar{display:none;}
+    .testi-grid{scroll-padding-left:clamp(20px,4vw,40px);}
+    .testi-card{flex:0 0 84%; scroll-snap-align:start;}
+    .testi-card:hover{transform:none;}
+  }
+
+  /* ============ FAQ ============ */
+  .faq-list{border-bottom:1px solid var(--line);}
+  .faq-item{border-top:1px solid var(--line); transition:background .35s ease;}
+  .faq-item.open{background:var(--surface);}
+  .faq-q{
+    width:100%; padding:27px 18px 27px 4px; display:flex; justify-content:space-between; align-items:center; gap:16px;
+    text-align:left; font-family:'Fraunces', serif; font-optical-sizing:auto; font-size:1.15rem; font-weight:500; color:var(--ink);
+    transition:color .3s var(--ease-soft), padding .3s var(--ease-soft);
+  }
+  .faq-item:hover .faq-q, .faq-item.open .faq-q{color:var(--accent);}
+  .faq-item.open .faq-q{padding-left:18px;}
+  .faq-plus{
+    flex-shrink:0; width:32px; height:32px; border-radius:50%; border:1px solid var(--line-strong);
+    position:relative; transition:transform .45s var(--ease-spring), border-color .35s ease, background .35s ease;
+  }
+  .faq-plus::before, .faq-plus::after{content:''; position:absolute; background:var(--ink); top:50%; left:50%; transform:translate(-50%,-50%); transition:background .3s ease;}
+  .faq-plus::before{width:11px; height:1.4px;}
+  .faq-plus::after{width:1.4px; height:11px; transition:opacity .3s ease;}
+  .faq-item.open .faq-plus{transform:rotate(135deg); border-color:var(--accent); background:var(--accent);}
+  .faq-item.open .faq-plus::before, .faq-item.open .faq-plus::after{background:var(--on-accent);}
+  .faq-a{max-height:0; overflow:hidden; transition:max-height .5s var(--ease);}
+  .faq-a p{padding:0 18px 28px 22px; color:var(--ink-soft); font-size:0.98rem; line-height:1.62; max-width:64ch;}
+
+  /* ============ CONTACTS ============ */
+  .contacts-grid{display:grid; grid-template-columns:1fr; gap:var(--sp-4);}
+  .contact-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--r-card); padding:var(--sp-4);}
+  .contact-row{display:flex; gap:16px; padding:19px 0; border-top:1px solid var(--line); align-items:center;}
+  .contact-row:first-child{border-top:none; padding-top:0;}
+  .contact-row .ci{
+    width:42px; height:42px; border-radius:50%; background:var(--bg); color:var(--wine);
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+    transition:transform .35s var(--ease-spring), background .3s var(--ease-soft), color .3s var(--ease-soft);
+  }
+  .contact-row:hover .ci{background:var(--accent); color:var(--on-accent); transform:scale(1.08);}
+  .contact-row .ci svg{width:17px; height:17px;}
+  .contact-row .cl-label{font-size:0.78rem; color:var(--ink-faint); margin-bottom:4px; text-transform:uppercase; letter-spacing:0.04em;}
+  .contact-row .cl-value{font-size:1.04rem; font-weight:700; display:inline-block; text-decoration:none; color:inherit; transition:color .25s var(--ease-soft);}
+  a.cl-value{padding:11px 0; margin:-11px 0; min-height:44px; display:flex; align-items:center;}
+  a.cl-value:hover{color:var(--accent);}
+  .contact-socials{display:flex; gap:11px; margin-top:28px;}
+  .soc{
+    width:46px; height:46px; border-radius:50%; border:1px solid var(--line-strong);
+    display:flex; align-items:center; justify-content:center; transition:transform .35s var(--ease-spring), background .3s var(--ease-soft), border-color .3s var(--ease-soft), color .3s var(--ease-soft);
+  }
+  .soc:hover{border-color:var(--accent); background:var(--accent); color:var(--on-accent); transform:translateY(-4px) scale(1.05);}
+  .soc svg{width:17px; height:17px;}
+
+  .map-card{
+    display:block; border-radius:var(--r-card); border:1px solid var(--line);
+    overflow:hidden; min-height:300px; position:relative; text-decoration:none; color:inherit;
+    background-color:var(--surface);
+    background-image:
+      linear-gradient(color-mix(in srgb, var(--ink) 6%, transparent) 1px, transparent 1px),
+      linear-gradient(90deg, color-mix(in srgb, var(--ink) 6%, transparent) 1px, transparent 1px),
+      radial-gradient(circle at 32% 32%, var(--surface-2), transparent 55%);
+    background-size:34px 34px, 34px 34px, 100% 100%;
+    transition:border-color .3s var(--ease-soft), box-shadow .3s var(--ease-soft);
+  }
+  .map-card:hover{border-color:var(--line-strong); box-shadow:var(--shadow-md);}
+  .map-open{
+    position:absolute; left:50%; bottom:22px; transform:translateX(-50%); z-index:2;
+    display:inline-flex; align-items:center; gap:8px; white-space:nowrap;
+    font-size:0.84rem; font-weight:700; color:var(--wine);
+    background:var(--bg); border:1px solid var(--line-strong);
+    padding:11px 20px; border-radius:999px;
+    transition:background .3s var(--ease-soft), color .3s var(--ease-soft), transform .3s var(--ease-spring);
+  }
+  .map-open svg{width:14px; height:14px;}
+  .map-card:hover .map-open{background:var(--accent); color:var(--on-accent); border-color:var(--accent); transform:translateX(-50%) translateY(-2px);}
+  .map-pin{display:flex; position:absolute; top:50%; left:50%; transform:translate(-50%,-100%); display:flex; flex-direction:column; align-items:center;}
+  .map-pin .dot{display:block; width:16px; height:16px; border-radius:50%; background:var(--accent); border:4px solid var(--bg); box-shadow:0 6px 14px rgba(0,0,0,0.22);}
+  .map-pin .pulse{display:block; position:absolute; top:0; left:50%; width:16px; height:16px; border-radius:50%; background:var(--accent); transform:translateX(-50%); animation:pulse 2.6s var(--ease-soft) infinite;}
+  @keyframes pulse{0%{opacity:.55; transform:translateX(-50%) scale(1);} 100%{opacity:0; transform:translateX(-50%) scale(2.8);}}
+  .map-pin > span:last-child{display:block; margin-top:10px; font-size:0.85rem; font-weight:700; background:var(--bg); padding:6px 14px; border-radius:999px; border:1px solid var(--line); white-space:nowrap;}
+
+  .final-cta{text-align:center; padding-top:var(--sp-3);}
+  .final-cta h2{font-size:clamp(2.2rem,4.4vw,3.4rem); max-width:16ch; margin:0 auto 28px;}
+  .final-cta-actions{display:flex; flex-wrap:wrap; gap:14px; justify-content:center;}
+  .final-cta .btn{padding:18px 40px; font-size:1.02rem;}
+
+  footer{border-top:1px solid var(--line); padding:40px 0;}
+  .footer-row{display:flex; flex-direction:column; gap:16px; font-size:0.83rem; color:var(--ink-faint); line-height:1.6;}
+  .footer-row > div:last-child{font-weight:600; color:var(--ink-soft);}
+
+  @media(min-width:860px){
+    .hero-grid{grid-template-columns:1.05fr 0.95fr; gap:72px;}
+    .contacts-grid{grid-template-columns:1fr 1fr;}
+    .footer-row{flex-direction:row; justify-content:space-between; align-items:center;}
+  }
+  /* the wordmark is wider than a plain logo, so the full desktop
+     nav (logo + 5 links + CTA) needs more room before it fits on one line without
+     the flex row shrinking links into a wrap — burger mode covers everything below this */
+  @media(min-width:1040px){
+    .nav-links{display:flex;}
+    .nav .nav-cta{display:inline-flex;}
+    .burger{display:none;}
+  }
+  @media(min-width:1100px){ .adv-grid{grid-template-columns:repeat(4,1fr);} }
+
+  @media(max-width:859px){
+    /* portrait shot: give it the room to be read, not a 300px slice */
+    .hero-visual{height:auto; aspect-ratio:5/6; max-height:66vh;}
+    .hv-photo{object-position:50% 50%;}
+  }
+  @media(max-width:859px) and (max-height:680px){
+    .hero-visual{aspect-ratio:auto; height:58vh; min-height:300px;}
+    .hv-photo{object-position:50% 58%;}
+  }
+
+  /* ============ PHONE TOAST ============ */
+  .toast{
+    position:fixed; left:50%; bottom:24px; transform:translate(-50%,16px);
+    z-index:200; max-width:calc(100% - 40px);
+    display:flex; align-items:center; gap:12px;
+    padding:14px 20px; border-radius:999px;
+    background:var(--ink); color:var(--bg);
+    font-size:0.92rem; font-weight:700; white-space:nowrap;
+    box-shadow:var(--shadow-md);
+    opacity:0; pointer-events:none;
+    transition:opacity .3s var(--ease-soft), transform .3s var(--ease-soft);
+  }
+  .toast.show{opacity:1; transform:translate(-50%,0); pointer-events:auto;}
+  .toast a{color:inherit; text-decoration:none;}
+  .toast small{font-weight:600; opacity:0.7; font-size:0.8rem;}
+
+  /* ============ MOBILE MENU ============ */
+  .mobile-menu{
+    position:fixed; inset:0; background:var(--bg); z-index:100;
+    display:flex; flex-direction:column; padding:24px;
+    overflow-y:auto; -webkit-overflow-scrolling:touch;
+    transform:translateX(100%); visibility:hidden; pointer-events:none;
+    transition:transform .45s var(--ease), visibility 0s linear .45s;
+  }
+  .mobile-menu.open{transform:translateX(0); visibility:visible; pointer-events:auto; transition:transform .45s var(--ease), visibility 0s;}
+  body.menu-open{overflow:hidden;}
+  .mobile-menu .mm-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:52px;}
+  .mobile-menu button:not(.btn):not(.burger){
+    text-decoration:none; text-align:left; width:100%; font-family:'Fraunces', serif; font-optical-sizing:auto; font-style:italic;
+    font-size:clamp(1.5rem,7vw,1.9rem); color:var(--ink);
+    padding:16px 0; border-bottom:1px solid var(--line);
+    transition:color .3s var(--ease-soft), padding-left .3s var(--ease-soft);
+  }
+  .mobile-menu button:not(.btn):not(.burger):hover{color:var(--accent); padding-left:6px;}
+  .mobile-menu button:not(.burger){opacity:0; transform:translateX(18px); transition:opacity .45s var(--ease-soft), transform .45s var(--ease-soft);}
+  .mobile-menu.open button:not(.burger){opacity:1; transform:none;}
+  .mobile-menu.open button:nth-child(2){transition-delay:.08s;}
+  .mobile-menu.open button:nth-child(3){transition-delay:.13s;}
+  .mobile-menu.open button:nth-child(4){transition-delay:.18s;}
+  .mobile-menu.open button:nth-child(5){transition-delay:.23s;}
+  .mobile-menu.open button:nth-child(6){transition-delay:.28s;}
+  .mobile-menu.open button:nth-child(7){transition-delay:.33s;}
+  .mobile-menu.open button:nth-child(8){transition-delay:.38s;}
+  .mobile-menu .btn{margin-top:36px; align-self:flex-start;}
+</style>
+<noscript><style>
+  .reveal, .reveal-group > *, .hero-anim > *, .hero-visual, .hv-photo{opacity:1 !important; transform:none !important; animation:none !important;}
+</style></noscript>
+</head>
+<body>
+
+<span id="top"></span>
+
+<header id="siteHeader">
+  <nav class="nav">
+    <button type="button" class="brand" data-scroll-to="#top" aria-label="Green Studio — на початок">
+      <span class="logo-mark">Green Studio</span>
+      <span class="logo-sub">beauty salon</span>
+    </button>
+    <div class="nav-links">
+      <button type="button" data-scroll-to="#services">Послуги</button>
+      <button type="button" data-scroll-to="#team">Напрямки</button>
+      <button type="button" data-scroll-to="#process">Як це працює</button>
+      <button type="button" data-scroll-to="#reviews">Відгуки</button>
+      <button type="button" data-scroll-to="#faq">Питання</button>
+      <button type="button" data-scroll-to="#contacts">Контакти</button>
+    </div>
+    <div style="display:flex; align-items:center; gap:14px;">
+      <button type="button" class="btn btn-primary nav-cta" data-scroll-to="#contacts">Записатися</button>
+      <button type="button" class="burger" id="burgerOpen" aria-label="Відкрити меню" aria-expanded="false" aria-controls="mobileMenu" onclick="toggleMenu(true)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mm-top">
+    <div class="brand" aria-label="Green Studio">
+      <span class="logo-mark">Green Studio</span>
+      <span class="logo-sub">beauty salon</span>
+    </div>
+    <button type="button" class="burger" aria-label="Закрити меню" onclick="toggleMenu(false)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="5" y1="5" x2="19" y2="19"/><line x1="5" y1="19" x2="19" y2="5"/></svg>
+    </button>
+  </div>
+  <button type="button" data-scroll-to="#services" onclick="toggleMenu(false)">Послуги</button>
+  <button type="button" data-scroll-to="#team" onclick="toggleMenu(false)">Напрямки</button>
+  <button type="button" data-scroll-to="#process" onclick="toggleMenu(false)">Як це працює</button>
+  <button type="button" data-scroll-to="#reviews" onclick="toggleMenu(false)">Відгуки</button>
+  <button type="button" data-scroll-to="#faq" onclick="toggleMenu(false)">Питання</button>
+  <button type="button" data-scroll-to="#contacts" onclick="toggleMenu(false)">Контакти</button>
+  <button type="button" class="btn btn-primary" data-scroll-to="#contacts" onclick="toggleMenu(false)">Записатися</button>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-anim">
+        <div class="eyebrow-city"><span class="dot"></span> Салон краси Green Studio · Чернівці</div>
+        <h1>Занурся у&nbsp;світ краси.</h1>
+        <p class="hero-sub">Візаж і брови, косметологія, нігтьовий сервіс, перукарські послуги та лікування й нарощування волосся — команда Green Studio подбає про кожну деталь твого образу.</p>
+        <div class="hero-cta-row">
+          <button type="button" class="btn btn-primary" data-scroll-to="#contacts">Записатися на процедуру
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+          <div class="hero-quick">
+            <span>Або напряму:</span>
+            <a href="https://www.instagram.com/greenstudio_cv" target="_blank" rel="noopener" class="quick-link" aria-label="Instagram Green Studio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
+            <a href="tel:+380950223200" class="quick-link" aria-label="Зателефонувати Green Studio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hv-panel">
+          <img class="hv-photo" decoding="async" fetchpriority="high" width="860" height="975" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 860 975'><defs><radialGradient id='bg' cx='0.5' cy='0.45' r='0.75'><stop offset='0%25' stop-color='%231B2018'/><stop offset='100%25' stop-color='%230B0E12'/></radialGradient><radialGradient id='disc' cx='0.5' cy='0.35' r='0.8'><stop offset='0%25' stop-color='%23858960'/><stop offset='100%25' stop-color='%23717550'/></radialGradient></defs><rect width='860' height='975' fill='url(%23bg)'/><circle cx='430' cy='470' r='300' fill='url(%23disc)' stroke='%23232519' stroke-width='16'/><line x1='150' y1='470' x2='710' y2='470' stroke='%23232519' stroke-width='2.5' stroke-opacity='0.75'/><text x='430' y='452' font-family=%22Optima,Candara,'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif%22 font-weight='300' letter-spacing='4' font-size='64' fill='%2315170F' text-anchor='middle'>GREEN STUDIO</text><text x='430' y='535' font-family=%22Optima,Candara,'Avenir Next','Segoe UI',Helvetica,Arial,sans-serif%22 font-weight='300' letter-spacing='9' font-size='34' fill='%2315170F' fill-opacity='0.85' text-anchor='middle'>BEAUTY SALON</text></svg>" alt="Green Studio — салон краси у Чернівцях">
+          <div class="hv-scrim"></div>
+        </div>
+        <div class="hv-caption">
+          <strong>ВІЗАЖ · КОСМЕТОЛОГІЯ · НІГТІ</strong>
+          <span>ПЕРУКАРІ · ВОЛОССЯ — усе в одному просторі</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVANTAGES -->
+  <div class="advantages-wrap">
+    <section>
+      <div class="wrap">
+        <div class="adv-grid reveal-group">
+          <div class="adv-item">
+            <div class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 12h8M12 8v8"/></svg></div>
+            <h3>П’ять напрямків в одному місці</h3>
+            <p>Візаж і брови, косметологія, нігті, перукарські послуги та волосся — не потрібно шукати майстрів у різних місцях.</p>
+          </div>
+          <div class="adv-item">
+            <div class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></div>
+            <h3>Запис у Direct</h3>
+            <p>Швидкий та зручний запис через Instagram Direct або дзвінок — відповідаємо протягом дня.</p>
+          </div>
+          <div class="adv-item">
+            <div class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+            <h3>Індивідуальний підбір</h3>
+            <p>Тип волосся, шкіри та бажаний результат враховуємо до, а не під час процедури.</p>
+          </div>
+          <div class="adv-item">
+            <div class="adv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg></div>
+            <h3>Прозорі ціни</h3>
+            <p>Прайс-лист опубліковано в Instagram — вартість відома заздалегідь, жодних сюрпризів у чеку.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Послуги</span>
+        <h2>Оберіть напрямок — покажемо, що входить</h2>
+        <p>Візаж і брови, косметологія, нігтьовий сервіс, перукарські послуги та лікування волосся — усе в Green Studio.</p>
+      </div>
+
+      <div class="service-tabs" id="tabs">
+        <button type="button" class="tab-btn" data-tab="all">Усі</button>
+        <button type="button" class="tab-btn active" data-tab="hair">Перукарські</button>
+        <button type="button" class="tab-btn" data-tab="visage">Візаж/брови</button>
+        <button type="button" class="tab-btn" data-tab="cosmo">Косметологія</button>
+        <button type="button" class="tab-btn" data-tab="nails">Нігті</button>
+        <button type="button" class="tab-btn" data-tab="treat">Лікування та нарощування</button>
+        <button type="button" class="tab-btn" data-tab="extra">Додатково</button>
+      </div>
+
+      <div class="services-grid reveal-group" id="servicesGrid" role="group" aria-label="Каталог послуг" tabindex="0">
+
+        <div class="service-card show" data-cat="hair">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Фарбування коренів — Green Studio">
+              <defs><linearGradient id="svcg0" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7B7F57"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg0)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 74c30 44 58 74 58 106a58 58 0 1 1-116 0c0-32 28-62 58-106z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M200 132c16 24 30 40 30 56a30 30 0 1 1-60 0c0-16 14-32 30-56z" fill="#D4D7B0" opacity="0.85"/>
+            </svg>
+            <span class="sc-tag">Перукарські</span>
+          </div>
+          <div class="sc-body">
+            <h3>Фарбування коренів</h3>
+            <p>Фарбування коренів для 1–4 довжини волосся: 1 300–1 600 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 300 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="hair">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Фарбування по довжині — Green Studio">
+              <defs><linearGradient id="svcg1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7B7F57"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg1)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 74c30 44 58 74 58 106a58 58 0 1 1-116 0c0-32 28-62 58-106z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M200 132c16 24 30 40 30 56a30 30 0 1 1-60 0c0-16 14-32 30-56z" fill="#D4D7B0" opacity="0.85"/>
+            </svg>
+            <span class="sc-tag">Перукарські</span>
+          </div>
+          <div class="sc-body">
+            <h3>Фарбування по довжині</h3>
+            <p>Фарбування на всю довжину залежно від довжини волосся: 1 600–2 200 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 600 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="hair">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Освітлення + тонування — Green Studio">
+              <defs><linearGradient id="svcg2" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7B7F57"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg2)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#D4D7B0" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Перукарські</span>
+          </div>
+          <div class="sc-body">
+            <h3>Освітлення + тонування</h3>
+            <p>Висвітлення з тонуванням для 1–4 довжини волосся: 1 800–2 500 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 800 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="hair">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Складні техніки фарбування — Green Studio">
+              <defs><linearGradient id="svcg3" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7B7F57"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg3)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g fill="none" stroke="#F2F3F4" stroke-width="4.5" stroke-linecap="round">
+      <path d="M96 118c34-26 70-26 104 0s70 26 104 0"/>
+      <path d="M96 158c34-26 70-26 104 0s70 26 104 0"/>
+      <path d="M96 198c34-26 70-26 104 0s70 26 104 0"/></g>
+    <g stroke="#D4D7B0" stroke-width="4" stroke-linecap="round">
+      <path d="M298 76v22M287 87h22"/><path d="M118 226v16M110 234h16"/></g>
+            </svg>
+            <span class="sc-tag">Перукарські</span>
+          </div>
+          <div class="sc-body">
+            <h3>Складні техніки фарбування</h3>
+            <p>Мелірування, контурне освітлення, Airtouch, тотал блонд, balayage, shatush, hand touch, вихід з чорного. У ціну входять реконструкція і стрижка кінців.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>2 000 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="hair">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Жіночі стрижки — Green Studio">
+              <defs><linearGradient id="svcg4" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7B7F57"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg4)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g stroke="#F2F3F4" stroke-width="5" fill="none" stroke-linecap="round">
+      <circle cx="140" cy="108" r="22"/><circle cx="140" cy="196" r="22"/>
+      <line x1="288" y1="86" x2="158" y2="188"/><line x1="288" y1="218" x2="158" y2="116"/>
+    </g><circle cx="300" cy="152" r="7" fill="#D4D7B0"/>
+            </svg>
+            <span class="sc-tag">Перукарські</span>
+          </div>
+          <div class="sc-body">
+            <h3>Жіночі стрижки</h3>
+            <p>Модельна стрижка 600–900 ₴, стрижка кінців 400–500 ₴ (з миттям 700 ₴), чубчик 200 ₴, полірування волосся 600–900 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>200 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="hair">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Укладки та гофре — Green Studio">
+              <defs><linearGradient id="svcg5" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7B7F57"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg5)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round">
+      <path d="M118 232c14-92 34-158 82-158s68 66 82 158"/>
+      <circle cx="200" cy="116" r="26"/></g>
+    <path d="M166 186h68" stroke="#D4D7B0" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Перукарські</span>
+          </div>
+          <div class="sc-body">
+            <h3>Укладки та гофре</h3>
+            <p>Укладка волосся 500–900 ₴, гофре і начіс 200–400 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>200 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="hair">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Зачіски та плетіння — Green Studio">
+              <defs><linearGradient id="svcg6" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7B7F57"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg6)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round">
+      <path d="M118 232c14-92 34-158 82-158s68 66 82 158"/>
+      <circle cx="200" cy="116" r="26"/></g>
+    <path d="M166 186h68" stroke="#D4D7B0" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Перукарські</span>
+          </div>
+          <div class="sc-body">
+            <h3>Зачіски та плетіння</h3>
+            <p>Накрутка, вечірня, коктейльна та весільна зачіска, плетіння на чисте волосся, легка накрутка без миття.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>400 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="hair">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Барбер: чоловічі та дитячі стрижки — Green Studio">
+              <defs><linearGradient id="svcg7" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7B7F57"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg7)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g stroke="#F2F3F4" stroke-width="5" fill="none" stroke-linecap="round">
+      <circle cx="140" cy="108" r="22"/><circle cx="140" cy="196" r="22"/>
+      <line x1="288" y1="86" x2="158" y2="188"/><line x1="288" y1="218" x2="158" y2="116"/>
+    </g><circle cx="300" cy="152" r="7" fill="#D4D7B0"/>
+            </svg>
+            <span class="sc-tag">Перукарські</span>
+          </div>
+          <div class="sc-body">
+            <h3>Барбер: чоловічі та дитячі стрижки</h3>
+            <p>Чоловіча стрижка 600 ₴, дитяча 500 ₴, під «о» 300 ₴, подовжена 700 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>300 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="hair">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Барбер: борода — Green Studio">
+              <defs><linearGradient id="svcg8" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7B7F57"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg8)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g stroke="#F2F3F4" stroke-width="5" fill="none" stroke-linecap="round">
+      <circle cx="140" cy="108" r="22"/><circle cx="140" cy="196" r="22"/>
+      <line x1="288" y1="86" x2="158" y2="188"/><line x1="288" y1="218" x2="158" y2="116"/>
+    </g><circle cx="300" cy="152" r="7" fill="#D4D7B0"/>
+            </svg>
+            <span class="sc-tag">Перукарські</span>
+          </div>
+          <div class="sc-body">
+            <h3>Барбер: борода</h3>
+            <p>Стрижка бороди 300 ₴, камуфляж бороди 400 ₴, стрижка + борода 800 ₴, видалення волосся (вухо/ніс/брови) — 50 ₴ за зону.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>300 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="hair">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Бразильське фарбування — Green Studio">
+              <defs><linearGradient id="svcg9" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7B7F57"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg9)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 74c30 44 58 74 58 106a58 58 0 1 1-116 0c0-32 28-62 58-106z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M200 132c16 24 30 40 30 56a30 30 0 1 1-60 0c0-16 14-32 30-56z" fill="#D4D7B0" opacity="0.85"/>
+            </svg>
+            <span class="sc-tag">Перукарські</span>
+          </div>
+          <div class="sc-body">
+            <h3>Бразильське фарбування</h3>
+            <p>Фарбування за бразильською технікою — вартість залежить від довжини й складності.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 300 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="hair">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Біозавивка волосся — Green Studio">
+              <defs><linearGradient id="svcg10" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7B7F57"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg10)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g fill="none" stroke="#F2F3F4" stroke-width="4.5" stroke-linecap="round">
+      <path d="M96 118c34-26 70-26 104 0s70 26 104 0"/>
+      <path d="M96 158c34-26 70-26 104 0s70 26 104 0"/>
+      <path d="M96 198c34-26 70-26 104 0s70 26 104 0"/></g>
+    <g stroke="#D4D7B0" stroke-width="4" stroke-linecap="round">
+      <path d="M298 76v22M287 87h22"/><path d="M118 226v16M110 234h16"/></g>
+            </svg>
+            <span class="sc-tag">Перукарські</span>
+          </div>
+          <div class="sc-body">
+            <h3>Біозавивка волосся</h3>
+            <p>Біозавивка для об’єму та форми — вартість залежить від довжини волосся.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 500 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="visage">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Корекція та фарбування брів — Green Studio">
+              <defs><linearGradient id="svcg11" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7B7F57"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg11)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M96 158c28-40 70-56 106-52" fill="none" stroke="#F2F3F4" stroke-width="10" stroke-linecap="round"/>
+    <path d="M304 158c-28-40-70-56-106-52" fill="none" stroke="#F2F3F4" stroke-width="10" stroke-linecap="round"/>
+    <path d="M132 208c22 18 46 26 68 26s46-8 68-26" fill="none" stroke="#D4D7B0" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Візаж/брови</span>
+          </div>
+          <div class="sc-body">
+            <h3>Корекція та фарбування брів</h3>
+            <p>Моделювання + корекція воском або пінцетом 300 ₴, комплекс (корекція + фарбування) 500 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>300 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="visage">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ламінування брів — Green Studio">
+              <defs><linearGradient id="svcg12" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7B7F57"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg12)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M96 158c28-40 70-56 106-52" fill="none" stroke="#F2F3F4" stroke-width="10" stroke-linecap="round"/>
+    <path d="M304 158c-28-40-70-56-106-52" fill="none" stroke="#F2F3F4" stroke-width="10" stroke-linecap="round"/>
+    <path d="M132 208c22 18 46 26 68 26s46-8 68-26" fill="none" stroke="#D4D7B0" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Візаж/брови</span>
+          </div>
+          <div class="sc-body">
+            <h3>Ламінування брів</h3>
+            <p>Ламінування брів без фарбування 500 ₴, ламінування та фарбування 700 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>500 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="visage">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Вії: ламінування та фарбування — Green Studio">
+              <defs><linearGradient id="svcg13" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7B7F57"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg13)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M108 168c28-36 60-54 92-54s64 18 92 54" fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round"/>
+    <path d="M108 168c28 30 60 44 92 44s64-14 92-44" fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="200" cy="168" r="20" fill="#D4D7B0"/>
+    <g stroke="#F2F3F4" stroke-width="4.5" stroke-linecap="round">
+      <path d="M128 130l-18-20M168 112l-10-24M212 110l6-24M256 120l16-22M292 144l22-14"/></g>
+            </svg>
+            <span class="sc-tag">Візаж/брови</span>
+          </div>
+          <div class="sc-body">
+            <h3>Вії: ламінування та фарбування</h3>
+            <p>Фарбування вій 300 ₴, ламінування та фарбування вій 700 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>300 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="visage">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Депіляція обличчя — Green Studio">
+              <defs><linearGradient id="svcg14" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7B7F57"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg14)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M108 168c28-36 60-54 92-54s64 18 92 54" fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round"/>
+    <path d="M108 168c28 30 60 44 92 44s64-14 92-44" fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="200" cy="168" r="20" fill="#D4D7B0"/>
+    <g stroke="#F2F3F4" stroke-width="4.5" stroke-linecap="round">
+      <path d="M128 130l-18-20M168 112l-10-24M212 110l6-24M256 120l16-22M292 144l22-14"/></g>
+            </svg>
+            <span class="sc-tag">Візаж/брови</span>
+          </div>
+          <div class="sc-body">
+            <h3>Депіляція обличчя</h3>
+            <p>Видалення небажаного волосся на обличчі.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>150 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="visage">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Макіяж — Green Studio">
+              <defs><linearGradient id="svcg15" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7B7F57"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg15)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <circle cx="200" cy="150" r="72" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <circle cx="200" cy="150" r="34" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <circle cx="200" cy="150" r="14" fill="#D4D7B0"/>
+    <path d="M200 78v-18M200 240v18M128 150h-18M272 150h18" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Візаж/брови</span>
+          </div>
+          <div class="sc-body">
+            <h3>Макіяж</h3>
+            <p>Експрес (20–30 хв) 700 ₴, денний 800 ₴, вечірній з віями 1 000 ₴, весільний від 1 200 ₴, графічний 1 200 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>700 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="cosmo">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Консультації — Green Studio">
+              <defs><linearGradient id="svcg16" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6E7250"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg16)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#D4D7B0" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Косметологія</span>
+          </div>
+          <div class="sc-body">
+            <h3>Консультації</h3>
+            <p>Консультація косметолога 600 ₴, консультація дерматолога 1 000 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>600 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="cosmo">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Чистка обличчя та мікродермабразія — Green Studio">
+              <defs><linearGradient id="svcg17" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6E7250"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg17)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#D4D7B0" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Косметологія</span>
+          </div>
+          <div class="sc-body">
+            <h3>Чистка обличчя та мікродермабразія</h3>
+            <p>Чистка обличчя MEDIK 8 — 1 700 ₴, Clear Choice — 1 700 ₴, алмазна мікродермабразія — 1 000 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 000 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="cosmo">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Доглядові процедури — Green Studio">
+              <defs><linearGradient id="svcg18" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6E7250"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg18)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#D4D7B0" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Косметологія</span>
+          </div>
+          <div class="sc-body">
+            <h3>Доглядові процедури</h3>
+            <p>Програма зволоження Institut esthederm 1 700 ₴, програма Cocon 1 700 ₴, карбоксітерапія 1 500 ₴, догляд за руками (парафінотерапія) 500 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>500 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="cosmo">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Пілінги — Green Studio">
+              <defs><linearGradient id="svcg19" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6E7250"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg19)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#D4D7B0" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Косметологія</span>
+          </div>
+          <div class="sc-body">
+            <h3>Пілінги</h3>
+            <p>Clear Choice: Acne Peel, Green Tea Glycolic, модифікований Джесснера — по 1 500 ₴, ліпосомальний мигдальний 25% та Alpha Jewel — по 1 600 ₴. Пілінг MCA 35 — 1 600 ₴, азелаїновий / мигдальний / гліколевий — 900 ₴, ретиноловий — 1 500 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>900 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="cosmo">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Апаратні процедури — Green Studio">
+              <defs><linearGradient id="svcg20" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6E7250"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg20)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g fill="none" stroke="#F2F3F4" stroke-width="4.5" stroke-linecap="round">
+      <path d="M96 118c34-26 70-26 104 0s70 26 104 0"/>
+      <path d="M96 158c34-26 70-26 104 0s70 26 104 0"/>
+      <path d="M96 198c34-26 70-26 104 0s70 26 104 0"/></g>
+    <g stroke="#D4D7B0" stroke-width="4" stroke-linecap="round">
+      <path d="M298 76v22M287 87h22"/><path d="M118 226v16M110 234h16"/></g>
+            </svg>
+            <span class="sc-tag">Косметологія</span>
+          </div>
+          <div class="sc-body">
+            <h3>Апаратні процедури</h3>
+            <p>Мікрострумова терапія, RF-ліфтинг, кавітація — по 1 000 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 000 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="cosmo">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Біоревіталізація — Green Studio">
+              <defs><linearGradient id="svcg21" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6E7250"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg21)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#D4D7B0" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Косметологія</span>
+          </div>
+          <div class="sc-body">
+            <h3>Біоревіталізація</h3>
+            <p>Jalopro 3 мл 3 600 ₴, Rejuran S 4 000 ₴, Rejuran Healer 6 000 ₴, Rejuran HB plus 4 500 ₴, IUSE skin booster 3 500 ₴, Jalopro Super Hydro 5 500 ₴, Revok50 5 500 ₴, Neauvia Hydro Delux 4 800 ₴, екзосоми 8 000 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>3 500 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="cosmo">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Мезотерапія навколо очей — Green Studio">
+              <defs><linearGradient id="svcg22" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6E7250"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg22)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#D4D7B0" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Косметологія</span>
+          </div>
+          <div class="sc-body">
+            <h3>Мезотерапія навколо очей</h3>
+            <p>Rejuran eye 4 000 ₴, TwAc Eye 4 000 ₴, Vitaran Tox eye 6 000 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>4 000 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="cosmo">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Мезотерапія волосистої частини голови — Green Studio">
+              <defs><linearGradient id="svcg23" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6E7250"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg23)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g stroke="#F2F3F4" stroke-width="4.5" fill="none" stroke-linecap="round">
+      <path d="M112 62c0 78 18 116 42 176"/><path d="M158 62c0 82 10 122 26 176"/>
+      <path d="M204 62c0 84 2 126 2 176"/><path d="M250 62c0 82-10 122-24 176"/>
+      <path d="M296 62c0 78-18 116-42 176"/></g>
+    <path d="M100 74h204" stroke="#D4D7B0" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Косметологія</span>
+          </div>
+          <div class="sc-body">
+            <h3>Мезотерапія волосистої частини голови</h3>
+            <p>Hair Vital — 2 000 ₴. Інші препарати уточнюйте за телефоном.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>2 000 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="cosmo">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Контурна пластика губ — Green Studio">
+              <defs><linearGradient id="svcg24" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6E7250"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg24)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M244 92l64 64"/>
+      <path d="M150 186l64 64 76-76-64-64z"/>
+      <path d="M120 216l34 34"/>
+      <path d="M198 138l28 28M226 110l28 28"/></g>
+    <circle cx="112" cy="258" r="9" fill="#D4D7B0"/>
+            </svg>
+            <span class="sc-tag">Косметологія</span>
+          </div>
+          <div class="sc-body">
+            <h3>Контурна пластика губ</h3>
+            <p>Belotero Contour / Shape 0,6 мл 6 000 ₴, Balance 1 мл 8 000 ₴, Intense 1 мл 7 000 ₴, Teosyale RHA 2 — 6 000 ₴, RHA Kiss 0,7 мл — 7 000 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>6 000 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="cosmo">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ботулінотерапія (Ксеомін, Ботокс) — Green Studio">
+              <defs><linearGradient id="svcg25" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6E7250"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg25)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M244 92l64 64"/>
+      <path d="M150 186l64 64 76-76-64-64z"/>
+      <path d="M120 216l34 34"/>
+      <path d="M198 138l28 28M226 110l28 28"/></g>
+    <circle cx="112" cy="258" r="9" fill="#D4D7B0"/>
+            </svg>
+            <span class="sc-tag">Косметологія</span>
+          </div>
+          <div class="sc-body">
+            <h3>Ботулінотерапія (Ксеомін, Ботокс)</h3>
+            <p>Міжбрів’я 2 800 ₴, лоб + міжбрів’я 5 000 ₴, очі 3 000 ₴, лоб + міжбрів’я + очі 7 500 ₴, зморшки носа 1 400 ₴, підборіддя 1 000 ₴, шия 5 500 ₴, гіпергідроз 9 000 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 000 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="cosmo">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Бланшинг поверхневих зморшок — Green Studio">
+              <defs><linearGradient id="svcg26" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6E7250"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg26)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#D4D7B0" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Косметологія</span>
+          </div>
+          <div class="sc-body">
+            <h3>Бланшинг поверхневих зморшок</h3>
+            <p>Belotero Soft — 6 000 ₴. Інші препарати уточнюйте за телефоном.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>6 000 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="cosmo">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Radiesse та Ellanse — Green Studio">
+              <defs><linearGradient id="svcg27" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6E7250"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg27)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M244 92l64 64"/>
+      <path d="M150 186l64 64 76-76-64-64z"/>
+      <path d="M120 216l34 34"/>
+      <path d="M198 138l28 28M226 110l28 28"/></g>
+    <circle cx="112" cy="258" r="9" fill="#D4D7B0"/>
+            </svg>
+            <span class="sc-tag">Косметологія</span>
+          </div>
+          <div class="sc-body">
+            <h3>Radiesse та Ellanse</h3>
+            <p>Radiesse 1,5 мл — 11 000 ₴, 3,0 мл — 20 000 ₴. Ellanse S: 1 шприц — 12 000 ₴, 2 шприци — 22 000 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>11 000 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="cosmo">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Полімолочна кислота — Green Studio">
+              <defs><linearGradient id="svcg28" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6E7250"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg28)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M244 92l64 64"/>
+      <path d="M150 186l64 64 76-76-64-64z"/>
+      <path d="M120 216l34 34"/>
+      <path d="M198 138l28 28M226 110l28 28"/></g>
+    <circle cx="112" cy="258" r="9" fill="#D4D7B0"/>
+            </svg>
+            <span class="sc-tag">Косметологія</span>
+          </div>
+          <div class="sc-body">
+            <h3>Полімолочна кислота</h3>
+            <p>JuveLook 8 000 ₴, Lenisna 18 000 ₴, зона очей 15 000 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>8 000 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="nails">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Манікюр — Green Studio">
+              <defs><linearGradient id="svcg29" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#797D55"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg29)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <rect x="162" y="128" width="76" height="110" rx="16" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <rect x="178" y="86" width="44" height="40" rx="8" fill="#D4D7B0"/>
+    <rect x="184" y="62" width="32" height="26" rx="6" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M176 186h48" stroke="#D4D7B0" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Нігті</span>
+          </div>
+          <div class="sc-body">
+            <h3>Манікюр</h3>
+            <p>Класичний, апаратний або комбінований 400 ₴, зі зняттям старого матеріалу 500 ₴, з гель-лаком 800 ₴, з покриттям гелем 850–900 ₴, зняття матеріалу 250 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>250 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="nails">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Нарощування та дизайн нігтів — Green Studio">
+              <defs><linearGradient id="svcg30" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#797D55"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg30)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M170 100a30 30 0 0 1 60 0v92a30 30 0 0 1-60 0z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M170 150h60" stroke="#D4D7B0" stroke-width="5" stroke-linecap="round"/>
+    <g stroke="#F2F3F4" stroke-width="4" stroke-linecap="round"><path d="M262 116h30M262 150h30M262 184h30"/></g>
+    <path d="M108 150h34" stroke="#D4D7B0" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Нігті</span>
+          </div>
+          <div class="sc-body">
+            <h3>Нарощування та дизайн нігтів</h3>
+            <p>Нарощування від 1 000 ₴. Френч гель-лаком, ремонт, дизайн або нарощення 1 нігтя — 70–100 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>70 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="nails">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Педикюр та догляд за ногами — Green Studio">
+              <defs><linearGradient id="svcg31" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#797D55"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg31)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round">
+      <path d="M132 236c0-56 16-84 16-114a20 20 0 0 1 40 0c0 26 8 36 8 36"/>
+      <path d="M196 236c0-46 10-66 10-94a20 20 0 0 1 40 0c0 20 8 28 8 28"/></g>
+    <circle cx="272" cy="112" r="12" fill="#D4D7B0"/>
+            </svg>
+            <span class="sc-tag">Нігті</span>
+          </div>
+          <div class="sc-body">
+            <h3>Педикюр та догляд за ногами</h3>
+            <p>Педикюр (кислотний, апаратний, комбінований) 800 ₴, з гель-лаком 900 ₴, чоловічий 900 ₴, чистка пальчиків 550 ₴, чистка стоп 400 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>400 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="treat">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Пілінг волосся — Green Studio">
+              <defs><linearGradient id="svcg32" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6A6E4A"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg32)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#D4D7B0" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лікування та нарощування</span>
+          </div>
+          <div class="sc-body">
+            <h3>Пілінг волосся</h3>
+            <p>Очищення та оновлення шкіри голови і волосся: 600–900 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>600 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="treat">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Відновлення і живлення Yellow — Green Studio">
+              <defs><linearGradient id="svcg33" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6A6E4A"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg33)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#D4D7B0" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лікування та нарощування</span>
+          </div>
+          <div class="sc-body">
+            <h3>Відновлення і живлення Yellow</h3>
+            <p>Професійне відновлення та живлення волосся від Yellow: 1 100–1 500 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 100 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="treat">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mango Spa — Green Studio">
+              <defs><linearGradient id="svcg34" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6A6E4A"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg34)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#D4D7B0" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лікування та нарощування</span>
+          </div>
+          <div class="sc-body">
+            <h3>Mango Spa</h3>
+            <p>SPA-догляд для волосся Mango Spa: 1 100–1 500 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 100 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="treat">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ритуал від Davines — Green Studio">
+              <defs><linearGradient id="svcg35" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6A6E4A"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg35)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#D4D7B0" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лікування та нарощування</span>
+          </div>
+          <div class="sc-body">
+            <h3>Ритуал від Davines</h3>
+            <p>Догляд-ритуал для волосся від Davines: 1 400–2 500 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 400 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="treat">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Холодний ботокс — Green Studio">
+              <defs><linearGradient id="svcg36" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6A6E4A"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg36)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#D4D7B0" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лікування та нарощування</span>
+          </div>
+          <div class="sc-body">
+            <h3>Холодний ботокс</h3>
+            <p>Холодний ботокс для гладкості та блиску волосся: 1 600–2 500 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 600 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="treat">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ламінування волосся — Green Studio">
+              <defs><linearGradient id="svcg37" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6A6E4A"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg37)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#D4D7B0" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лікування та нарощування</span>
+          </div>
+          <div class="sc-body">
+            <h3>Ламінування волосся</h3>
+            <p>Ламінування волосся для блиску та гладкості: 1 200–1 700 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 200 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="treat">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Відновлення Lanza Ultimate — Green Studio">
+              <defs><linearGradient id="svcg38" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6A6E4A"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg38)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M200 68c44 30 66 62 66 96a66 66 0 1 1-132 0c0-34 22-66 66-96z" fill="none" stroke="#F2F3F4" stroke-width="5"/>
+    <path d="M168 176c14 30 42 44 64 40" fill="none" stroke="#D4D7B0" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лікування та нарощування</span>
+          </div>
+          <div class="sc-body">
+            <h3>Відновлення Lanza Ultimate</h3>
+            <p>Інтенсивне відновлення Lanza Ultimate: 1 300–2 500 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>1 300 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="treat">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Кератинове вирівнювання — Green Studio">
+              <defs><linearGradient id="svcg39" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6A6E4A"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg39)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g stroke="#F2F3F4" stroke-width="4.5" fill="none" stroke-linecap="round">
+      <path d="M112 62c0 78 18 116 42 176"/><path d="M158 62c0 82 10 122 26 176"/>
+      <path d="M204 62c0 84 2 126 2 176"/><path d="M250 62c0 82-10 122-24 176"/>
+      <path d="M296 62c0 78-18 116-42 176"/></g>
+    <path d="M100 74h204" stroke="#D4D7B0" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лікування та нарощування</span>
+          </div>
+          <div class="sc-body">
+            <h3>Кератинове вирівнювання</h3>
+            <p>Залежно від довжини: 1 — 2 000–2 300 ₴, 2 — 2 500–2 900 ₴, 3 — 3 000–3 300 ₴, 4 — 3 400–3 700 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>2 000 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="treat">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Нарощування волосся преміум — Green Studio">
+              <defs><linearGradient id="svcg40" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6A6E4A"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg40)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g stroke="#F2F3F4" stroke-width="4.5" fill="none" stroke-linecap="round">
+      <path d="M112 62c0 78 18 116 42 176"/><path d="M158 62c0 82 10 122 26 176"/>
+      <path d="M204 62c0 84 2 126 2 176"/><path d="M250 62c0 82-10 122-24 176"/>
+      <path d="M296 62c0 78-18 116-42 176"/></g>
+    <path d="M100 74h204" stroke="#D4D7B0" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лікування та нарощування</span>
+          </div>
+          <div class="sc-body">
+            <h3>Нарощування волосся преміум</h3>
+            <p>Блонд / чорні: 50 см — 200 $, 60 см — 220 / 210 $, 70 см — 230 / 220 $, 80 см — 245 / 235 $. Робота 5 000 ₴ за 100 г волосся.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>200 $</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="treat">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Слов’янка дитяча — Green Studio">
+              <defs><linearGradient id="svcg41" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6A6E4A"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg41)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <g stroke="#F2F3F4" stroke-width="4.5" fill="none" stroke-linecap="round">
+      <path d="M112 62c0 78 18 116 42 176"/><path d="M158 62c0 82 10 122 26 176"/>
+      <path d="M204 62c0 84 2 126 2 176"/><path d="M250 62c0 82-10 122-24 176"/>
+      <path d="M296 62c0 78-18 116-42 176"/></g>
+    <path d="M100 74h204" stroke="#D4D7B0" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+            <span class="sc-tag">Лікування та нарощування</span>
+          </div>
+          <div class="sc-body">
+            <h3>Слов’янка дитяча</h3>
+            <p>50–60 см — 360 $, 65–75 см — 380 $, 80–90 см — 420 $. Хвиля +10 $, омбре +10 $.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>від</em><strong>360 $</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card show" data-cat="extra">
+          <div class="sc-media">
+            <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ранній вихід майстра — Green Studio">
+              <defs><linearGradient id="svcg42" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#747852"/><stop offset="100%" stop-color="#26281B"/>
+              </linearGradient></defs>
+              <rect width="400" height="300" fill="url(#svcg42)"/>
+              <circle cx="352" cy="46" r="92" fill="#FFFFFF" opacity="0.06"/>
+                            <path d="M108 168c28-36 60-54 92-54s64 18 92 54" fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round"/>
+    <path d="M108 168c28 30 60 44 92 44s64-14 92-44" fill="none" stroke="#F2F3F4" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="200" cy="168" r="20" fill="#D4D7B0"/>
+    <g stroke="#F2F3F4" stroke-width="4.5" stroke-linecap="round">
+      <path d="M128 130l-18-20M168 112l-10-24M212 110l6-24M256 120l16-22M292 144l22-14"/></g>
+            </svg>
+            <span class="sc-tag">Додатково</span>
+          </div>
+          <div class="sc-body">
+            <h3>Ранній вихід майстра</h3>
+            <p>З 5:00 до 6:00 — 500 ₴, 6:00–7:00 — 400 ₴, 7:00–8:00 — 300 ₴, 8:00–9:00 — 200 ₴.</p>
+            <div class="sc-foot">
+              <div class="sc-price"><em>доплата</em><strong>200–500 ₴</strong></div>
+              <button type="button" class="sc-btn" data-scroll-to="#contacts">Записатися
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sc-hint">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+        Гортайте, щоб побачити всі послуги
+      </div>
+      <p class="sc-note">Ціни за прайс-листом Green Studio в Instagram; остаточна вартість залежить від довжини й густоти волосся. Актуальну вартість процедур уточнюйте за телефоном 095 022 32 00 або в Direct.</p>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Напрямки</span>
+        <h2>Напрямки, які подбають про ваш образ</h2>
+        <p>Кожен напрямок у Green Studio веде окремий спеціаліст — від візажу до лікування волосся. Знайомтеся з роботами в нашому Instagram.</p>
+      </div>
+      <div class="team-grid reveal-group">
+        <a class="team-card" href="https://www.instagram.com/greenstudio_cv" target="_blank" rel="noopener">
+          <div class="team-avatar">В</div>
+          <div class="team-info">
+            <div class="team-name">Візаж / брови</div>
+            <div class="team-role">Макіяж та оформлення брів</div>
+            <span class="team-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>@greenstudio_cv</span>
+          </div>
+        </a>
+        <a class="team-card" href="https://www.instagram.com/greenstudio_cv" target="_blank" rel="noopener">
+          <div class="team-avatar">К</div>
+          <div class="team-info">
+            <div class="team-name">Косметологія</div>
+            <div class="team-role">Догляд та процедури для шкіри</div>
+            <span class="team-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>@greenstudio_cv</span>
+          </div>
+        </a>
+        <a class="team-card" href="https://www.instagram.com/greenstudio_cv" target="_blank" rel="noopener">
+          <div class="team-avatar">Н</div>
+          <div class="team-info">
+            <div class="team-name">Нігтьовий сервіс</div>
+            <div class="team-role">Нігті рук і ніг</div>
+            <span class="team-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>@greenstudio_cv</span>
+          </div>
+        </a>
+        <a class="team-card" href="https://www.instagram.com/greenstudio_cv" target="_blank" rel="noopener">
+          <div class="team-avatar">П</div>
+          <div class="team-info">
+            <div class="team-name">Перукарські послуги</div>
+            <div class="team-role">Стрижки, фарбування, укладки, барбер</div>
+            <span class="team-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>@greenstudio_cv</span>
+          </div>
+        </a>
+        <a class="team-card" href="https://www.instagram.com/greenstudio_cv" target="_blank" rel="noopener">
+          <div class="team-avatar">Л</div>
+          <div class="team-info">
+            <div class="team-name">Лікування / нарощування волосся</div>
+            <div class="team-role">Відновлення та нарощування</div>
+            <span class="team-handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>@greenstudio_cv</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="process">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Як це працює</span>
+        <h2>Від повідомлення до результату — чотири кроки</h2>
+      </div>
+      <div class="steps reveal-group">
+        <div class="step">
+          <div class="step-index">1</div>
+          <div>
+            <h3>Записуєтесь зручним способом</h3>
+            <p>Натискаєте «Записатися» на сайті, пишете в Instagram Direct або телефонуєте — коротко опишіть, яку процедуру хочете.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-index">2</div>
+          <div>
+            <h3>Підбираємо час і майстра</h3>
+            <p>Пропонуємо вільні слоти та майстра, що спеціалізується саме на вашому запиті.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-index">3</div>
+          <div>
+            <h3>Консультація перед процедурою</h3>
+            <p>Обговорюємо бажаний результат і підбираємо засоби під ваш тип волосся або шкіри.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-index">4</div>
+          <div>
+            <h3>Процедура та рекомендації</h3>
+            <p>Після завершення даємо поради з догляду вдома, щоб результат тримався довше.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <div class="testi-wrap">
+    <section id="reviews">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="kicker">Чому нас обирають</span>
+          <h2>Дивіться наші роботи в Instagram.</h2>
+        </div>
+
+        <span class="trust-chips-label reveal">Найчастіше зараз записуються на:</span>
+        <div class="trust-chips reveal">
+          <span>Фарбування волосся</span>
+          <span>Складні техніки</span>
+          <span>Стрижки та барбер</span>
+          <span>Зачіски</span>
+          <span>Візаж і брови</span>
+        </div>
+
+        <div class="testi-grid reveal-group">
+          <div class="testi-card">
+            <p class="quote">У нашому Instagram — 1 397 публікацій із роботами майстрів. Подивіться приклади фарбування, стрижок, зачісок та інших процедур перед записом.</p>
+            <div class="testi-who">
+              <div class="testi-avatar">GS</div>
+              <div><div class="testi-name">@greenstudio_cv</div><div class="testi-service">6 403 підписники в Instagram</div></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <p class="quote">Чернівці, вул. Скальда, 13. Напишіть у Direct або зателефонуйте — підберемо зручний час і майстра під вашу процедуру.</p>
+            <div class="testi-who">
+              <div class="testi-avatar">☎</div>
+              <div><div class="testi-name">095 022 32 00</div><div class="testi-service">Запис за телефоном або в Direct</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trust-next reveal">
+          <div>
+            <h3>Далі — один крок</h3>
+            <p>Напишіть в Instagram або зателефонуйте на 095 022 32 00, назвіть послугу — ми запропонуємо найближчий вільний час.</p>
+          </div>
+          <div class="trust-next-actions">
+            <button type="button" class="btn btn-primary btn-cream" data-scroll-to="#contacts">Записатися
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+            <a href="https://www.instagram.com/greenstudio_cv" target="_blank" rel="noopener" class="quick-link" aria-label="Instagram Green Studio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
+            <a href="tel:+380950223200" class="quick-link" aria-label="Зателефонувати Green Studio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Питання</span>
+        <h2>Відповіді, які зазвичай питають перед записом</h2>
+      </div>
+      <div class="faq-list" id="faqList">
+        <div class="faq-item">
+          <button type="button" class="faq-q" id="faqq0" aria-controls="faqa0" aria-expanded="false">Як записатися на процедуру?<span class="faq-plus"></span></button>
+          <div class="faq-a" id="faqa0" role="region" aria-labelledby="faqq0"><p>Натисніть кнопку «Записатися» на сайті, напишіть у Direct в Instagram або зателефонуйте — вкажіть бажану послугу, і ми запропонуємо найближчий вільний час.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-q" id="faqq1" aria-controls="faqa1" aria-expanded="false">Чи можна перенести або скасувати запис?<span class="faq-plus"></span></button>
+          <div class="faq-a" id="faqa1" role="region" aria-labelledby="faqq1"><p>Так, попередьте нас заздалегідь у месенджері — підберемо інший зручний час без додаткових питань.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-q" id="faqq2" aria-controls="faqa2" aria-expanded="false">Скільки триває консультація перед процедурою?<span class="faq-plus"></span></button>
+          <div class="faq-a" id="faqa2" role="region" aria-labelledby="faqq2"><p>Зазвичай 10–15 хвилин: обговорюємо результат, тип волосся або шкіри та підбираємо засоби.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-q" id="faqq3" aria-controls="faqa3" aria-expanded="false">Якими засобами ви користуєтесь?<span class="faq-plus"></span></button>
+          <div class="faq-a" id="faqa3" role="region" aria-labelledby="faqq3"><p>Використовуємо перевірені професійні бренди для волосся, шкіри та нігтів, підібрані під потреби кожної клієнтки.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section id="contacts">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Контакти</span>
+        <h2>Green Studio у Чернівцях</h2>
+        <p>Напишіть у Direct або зателефонуйте — підберемо зручний час і майстра під вашу процедуру.</p>
+      </div>
+
+      <div class="contacts-grid reveal-group">
+        <div class="contact-card">
+          <div class="contact-row">
+            <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><div class="cl-label">Телефон</div><a class="cl-value" href="tel:+380950223200">+380 95 022 32 00</a></div>
+          </div>
+          <div class="contact-row">
+            <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></div>
+            <div><div class="cl-label">Instagram</div><a class="cl-value" href="https://www.instagram.com/greenstudio_cv" target="_blank" rel="noopener">@greenstudio_cv</a></div>
+          </div>
+          <div class="contact-row">
+            <div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><div class="cl-label">Адреса</div><a class="cl-value" href="https://www.google.com/maps/search/?api=1&amp;query=%D0%B2%D1%83%D0%BB.%20%D0%A1%D0%BA%D0%B0%D0%BB%D1%8C%D0%B4%D0%B0%2C%2013%2C%20%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96" target="_blank" rel="noopener">вул. Скальда, 13, Чернівці, 58000</a></div>
+          </div>
+          <div class="contact-socials">
+            <a class="soc" href="https://www.instagram.com/greenstudio_cv" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+            <a class="soc" href="tel:+380950223200" aria-label="Телефон"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg></a>
+          </div>
+        </div>
+
+        <a class="map-card" href="https://www.google.com/maps/search/?api=1&amp;query=%D0%B2%D1%83%D0%BB.%20%D0%A1%D0%BA%D0%B0%D0%BB%D1%8C%D0%B4%D0%B0%2C%2013%2C%20%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96" target="_blank" rel="noopener">
+          <span class="map-pin">
+            <span class="pulse"></span>
+            <span class="dot"></span>
+            <span>вул. Скальда, 13</span>
+          </span>
+          <span class="map-open">Відкрити в Google Maps
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="final-cta reveal">
+        <h2>Готові до нового образу?</h2>
+        <div class="final-cta-actions">
+          <a href="tel:+380950223200" class="btn btn-primary">Зателефонувати
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="https://www.instagram.com/greenstudio_cv" target="_blank" rel="noopener" class="btn btn-ghost">Написати в Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="toast" id="phoneToast" role="status" aria-live="polite"></div>
+
+<footer>
+  <div class="wrap footer-row">
+    <div>
+      <span class="footer-logo">Green Studio</span>
+      © 2026 Green Studio. Салон краси, Чернівці.
+    </div>
+    <div>Візаж/брови · Косметологія · Нігті · Перукарі · Волосся</div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  // ---------- header state on scroll ----------
+  var header = document.getElementById('siteHeader');
+  var ticking = false;
+  window.addEventListener('scroll', function () {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(function () {
+      header.classList.toggle('scrolled', window.scrollY > 12);
+      ticking = false;
+    });
+  }, { passive: true });
+
+  // ---------- mobile menu ----------
+  var menu = document.getElementById('mobileMenu');
+  var burger = document.getElementById('burgerOpen');
+
+  window.toggleMenu = function (open) {
+    menu.classList.toggle('open', open);
+    document.body.classList.toggle('menu-open', open);
+    if (burger) burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (!open && burger) burger.focus({ preventScroll: true });
+    if (open) {
+      var firstLink = menu.querySelector('a[href], button');
+      if (firstLink) firstLink.focus({ preventScroll: true });
+    }
+  };
+
+  document.addEventListener('keydown', function (e) {
+    if (!menu.classList.contains('open')) return;
+    if (e.key === 'Escape') { window.toggleMenu(false); return; }
+    // FIX: keep Tab inside the overlay — focus used to walk onto the page behind it
+    if (e.key !== 'Tab') return;
+    var f = menu.querySelectorAll('a[href], button:not([disabled])');
+    if (!f.length) return;
+    var first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
+
+  // FIX: body{overflow:hidden} does not stop touch-scrolling the page behind an
+  // overlay on iOS Safari — block touchmove outside the menu while it is open.
+  document.addEventListener('touchmove', function (e) {
+    if (document.body.classList.contains('menu-open') && !menu.contains(e.target)) {
+      e.preventDefault();
+    }
+  }, { passive: false });
+
+  // never leave the overlay open when the layout switches to desktop
+  window.addEventListener('resize', function () {
+    if (window.innerWidth >= 1040 && menu.classList.contains('open')) window.toggleMenu(false);
+  });
+
+  // ---------- in-page navigation ----------
+  // These are <button> elements, not <a href="#...">, on purpose: a real anchor
+  // href pointing at a hash gets resolved into a full navigation attempt in some
+  // embedded/sandboxed preview hosts (e.g. srcdoc-based artifact previews), which
+  // then intercept the click with their own "leave this page?" prompt even though
+  // the page itself never navigates anywhere. A button has nothing for that kind
+  // of host-level link interception to hook into, so it just scrolls, everywhere.
+  document.querySelectorAll('[data-scroll-to]').forEach(function (el) {
+    var targetSel = el.getAttribute('data-scroll-to');
+    if (!targetSel || targetSel === '#') return;
+    var target = document.querySelector(targetSel);
+    if (!target) return;
+    el.addEventListener('click', function () {
+      var startY = window.pageYOffset;
+      try {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } catch (err) {
+        target.scrollIntoView();
+      }
+      // cosmetic only (puts the section hash in the address bar) — sandboxed
+      // preview frames (about:srcdoc) throw SecurityError here, so this must
+      // never be allowed to block the scroll above it.
+      try { history.pushState(null, '', targetSel); } catch (err) {}
+      setTimeout(function () {
+        if (Math.abs(window.pageYOffset - startY) < 10) {
+          try {
+            target.scrollIntoView({ behavior: 'instant', block: 'start' });
+          } catch (err) {
+            target.scrollIntoView();
+          }
+        }
+      }, 500);
+    });
+  });
+
+  // ---------- service filter ----------
+  var tabs = document.querySelectorAll('.tab-btn');
+  var cards = document.querySelectorAll('.service-card');
+  var grid = document.getElementById('servicesGrid');
+
+  (function () {
+    var a = document.querySelector('.tab-btn.active');
+    var c = a ? a.getAttribute('data-tab') : 'all';
+    cards.forEach(function (card) {
+      card.classList.toggle('show', c === 'all' || card.getAttribute('data-cat') === c);
+    });
+  })();
+
+  tabs.forEach(function (tab) {
+    tab.setAttribute('aria-pressed', tab.classList.contains('active') ? 'true' : 'false');
+    tab.addEventListener('click', function () {
+      tabs.forEach(function (t) {
+        t.classList.remove('active');
+        t.setAttribute('aria-pressed', 'false');
+      });
+      tab.classList.add('active');
+      tab.setAttribute('aria-pressed', 'true');
+
+      var cat = tab.getAttribute('data-tab');
+      cards.forEach(function (card) {
+        card.classList.toggle('show', cat === 'all' || card.getAttribute('data-cat') === cat);
+      });
+
+      // the phone layout is a horizontal scroller — start the new set from the left
+      if (grid) grid.scrollLeft = 0;
+      // keep the chosen tab in view inside its own scroller
+      if (tab.scrollIntoView) tab.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+    });
+  });
+
+  // ---------- FAQ accordion ----------
+  var faqItems = Array.prototype.slice.call(document.querySelectorAll('.faq-item'));
+
+  function closeAll() {
+    faqItems.forEach(function (item) {
+      item.classList.remove('open');
+      var a = item.querySelector('.faq-a');
+      var b = item.querySelector('.faq-q');
+      if (a) a.style.maxHeight = null;
+      if (b) b.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  faqItems.forEach(function (item) {
+    var btn = item.querySelector('.faq-q');
+    var answer = item.querySelector('.faq-a');
+    if (!btn || !answer) return;
+    btn.addEventListener('click', function () {
+      var wasOpen = item.classList.contains('open');
+      closeAll();
+      if (!wasOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // an open answer keeps a pixel height — recompute it when the text reflows
+  var resizeTimer;
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      var open = document.querySelector('.faq-item.open .faq-a');
+      if (open) open.style.maxHeight = open.scrollHeight + 'px';
+    }, 150);
+  });
+
+  // ---------- phone links ----------
+  // inside a sandboxed frame (artifact preview, in-app browser, embed) a tel:
+  // navigation is silently swallowed, so the button looks dead. Attempt the call,
+  // then always surface the number itself so there is a usable fallback.
+  var toast = document.getElementById('phoneToast');
+  var toastTimer;
+
+  function showToast(number) {
+    if (!toast) return;
+    toast.innerHTML = '<a href="tel:' + number.replace(/[^+\d]/g, '') + '">' + number + '</a>' +
+                      '<small>торкніться, щоб подзвонити</small>';
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toast.classList.remove('show'); }, 6000);
+  }
+
+  document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      if (window.top === window.self) return;   // real page: let the browser handle it
+      if (link.closest('.toast')) return;       // the toast link itself
+      e.preventDefault();
+
+      var raw = link.getAttribute('href').replace('tel:', '');
+      var pretty = raw.replace(/^(\+380)(\d{2})(\d{3})(\d{2})(\d{2})$/, '$1 $2 $3 $4 $5');
+
+      try { window.open(link.href, '_blank'); } catch (err) {}
+      try { window.top.location.href = link.href; } catch (err) {}
+      if (navigator.clipboard) { navigator.clipboard.writeText(raw).catch(function () {}); }
+
+      showToast(pretty);
+    });
+  });
+
+  // ---------- scroll reveal ----------
+  var revealEls = Array.prototype.slice.call(document.querySelectorAll('.reveal, .reveal-group'));
+
+  function show(el) {
+    if (el.classList.contains('in')) return;
+    el.classList.add('in');
+    if (io) io.unobserve(el);
+  }
+
+  // A fast flick can carry an element past the viewport between two observer
+  // samples, leaving it permanently invisible. Sweep anything already scrolled
+  // into (or past) view so no content can be lost, whatever the scroll speed.
+  function sweep() {
+    for (var i = revealEls.length - 1; i >= 0; i--) {
+      var el = revealEls[i];
+      if (el.classList.contains('in')) { revealEls.splice(i, 1); continue; }
+      if (el.getBoundingClientRect().top < window.innerHeight - 40) show(el);
+    }
+  }
+
+  var io = null;
+  if ('IntersectionObserver' in window) {
+    io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) show(entry.target);
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
+    revealEls.forEach(function (el) { io.observe(el); });
+
+    var sweepScheduled = false;
+    window.addEventListener('scroll', function () {
+      if (sweepScheduled) return;
+      sweepScheduled = true;
+      window.requestAnimationFrame(function () { sweep(); sweepScheduled = false; });
+    }, { passive: true });
+    window.addEventListener('resize', sweep, { passive: true });
+    window.addEventListener('load', sweep);
+    sweep();
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('in'); });
+  }
+})();
+</script>
+
+</body>
+</html>
